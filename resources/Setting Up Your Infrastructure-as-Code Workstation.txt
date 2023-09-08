@@ -1,0 +1,167 @@
+Hello, Cloud Gurus, and welcome back.
+In this lesson, we're going to get your workstation set up
+for deploying your infrastructure-as-code
+to Azure using Terraform.
+Let's take a look
+at what we're going to cover in this lesson.
+First up, we'll take a look
+at the infrastructure-as-code toolkit
+we'll be using throughout this course.
+Then we'll take a look at a demo
+of how you can automate the process
+of setting up your workstation using Chocolatey.
+And now, I know this is a short lesson,
+but I didn't want to leave anyone behind,
+so let's start from zero and before we know it,
+we'll be continuously delivering our infrastructure-as-code.
+Let's get stuck in.
+To author your infrastructure-as-code,
+you're going to need a few tools in your toolkit.
+Let's take a quick look
+at some of the tools you'll need to get this done.
+Firstly, you'll obviously need the Terraform executable,
+and we'll use this to validate our configuration,
+initialize our Terraform providers and state,
+and plan out and deploy our infrastructure.
+We'll also need Git and I have the GitHub Octocat icon here,
+but Git and GitHub are different things
+and we'll use Git as our version control system
+to work with our code in a distributed manner,
+allowing multiple platform engineers to work with the code.
+And GitHub will serve as our Git repository.
+We'll also need the Azure CLI
+and we'll use it to log into Azure
+when we're doing deployments locally,
+and it's also used to create credentials
+when deploying our infrastructure using Terraform Cloud.
+And last but not least,
+we'll need an integrated development environment,
+or IDE, to author our configuration.
+Visual Studio Code and the Visual Studio Code extensions,
+like the Terraform extension,
+will make authoring our code a seamless experience.
+All right, let's take a look at a demo
+of how you can easily set up
+your infrastructure-as-code workstation.
+Now because we're all about
+that infrastructure-as-code life,
+let's use code to set up our workstation in this demo.
+I'm going to demonstrate how you can do this on Windows,
+but I'll also drop some links
+so you can get the tools set up
+on your operating system of choice.
+And I also wanted to show you this
+because I'll use Chocolatey
+to set up an infrastructure-as-code workstation
+for you to complete all of the demos and hands-on labs
+in this course, and I wanted you to see how I did it.
+So we're not skipping anything.
+Now Chocolatey is a package manager for Windows,
+and in this demo, we'll use Chocolatey
+to build an infrastructure-as-code installation script
+and configure our workstation.
+And we'll also manually install a couple
+of Visual Studio Code extensions
+that we'll use throughout the course.
+All right, so here I am on the workstation
+that we're going to use
+as our infrastructure-as-code development workstation,
+and I've gone ahead and navigated to chocolatey.org
+and we're going to use Chocolatey
+to build a script that we can use
+to automate the installation of all the software we need
+for our infrastructure-as-code workstation.
+We'll go ahead and click Get Started,
+and then we'll just scroll down a little bit
+and we'll copy the installation script.
+Then we'll open an administrative PowerShell
+and then we'll go ahead and paste the script in.
+Now this script is simply bypassing the execution policy
+for this particular process
+and it's ensuring we're using TLS 1.2, and then it's using
+the Invoke-Expression PowerShell commandlet,
+which is the iex alias there,
+to download the Chocolatey installer script
+and run that script.
+Let's go ahead and run that.
+This will just take a moment to install,
+so we'll come back when this is done.
+All right, the installation is now complete.
+Now we just need to close PowerShell and reopen it
+to refresh our environment variables.
+So we'll go ahead and close PowerShell
+and then we'll open PowerShell back up again.
+All right, now let's go back to Microsoft Edge
+and we'll build
+our infrastructure-as-code installation script.
+We'll scroll back to the top and we'll navigate home.
+We'll click Find Packages.
+This is just indicating that we're using a public repository
+or a community-powered repository
+and that could be a security issue,
+but we understand the risk
+so we'll go ahead and click I Understand.
+Now let's go ahead and search for Terraform
+and we'll click the button to add to Script Builder.
+And now we'll repeat this process for Visual Studio Code.
+We'll also grab Git for version control.
+And we'll also grab the Azure CLI.
+Now we can go ahead and click the Builder icon
+and then click Generate Script.
+We'll go ahead and click Next.
+We'll ensure individual is selected
+and then we'll click Next.
+We'll go ahead and copy this script,
+jump over to PowerShell,
+and paste the script to install all the required software.
+This will just take a moment to complete,
+so we'll come back when this is done.
+All right, the installation is now complete.
+Now you can see that we'll need
+to close and reopen PowerShell
+to refresh our environmental variables,
+or we can run the refresh env command.
+I'm just gonna go ahead and close PowerShell
+and then I'll reopen it.
+Now let's confirm the installation of our software.
+We'll run terraform version.
+That confirms that Terraform is installed successfully.
+And then we'll run git version.
+That confirms that Git is installed successfully.
+And then we'll go ahead and run az version
+and that confirms that the Azure CLI
+is installed successfully.
+And then we'll go ahead and run code version
+and that confirms that Visual Studio Code
+is installed successfully.
+All right, now let's install
+the HashiCorp Terraform Visual Studio Code extension.
+To do that, we'll run code
+with the --install-extension parameter
+and we'll provide the name hashicorp terraform.
+All right, that installation is now complete,
+so we'll go ahead and close all of these windows
+and we'll open Visual Studio Code
+to confirm the extension is installed successfully.
+And we'll just navigate to the Extensions blade
+and we can see that HashiCorp's Terraform extension
+is installed successfully in Visual Studio Code.
+All right,
+our infrastructure-as-code workstation is ready to go.
+I'll drop links for how you can do this on Linux and macOS
+but we're ready to go with the hands-on lessons and labs
+for the remainder of this course.
+All right, let's wrap up with a quick summary
+and some key takeaways.
+First up, we explored the toolkit you'll need
+to set up your infrastructure-as-code workstation
+when working with Terraform and Azure,
+including the Terraform executable, Git for version control,
+the Azure CLI to log into Azure and generate credentials,
+and Visual Studio Code with the Terraform extension
+to author our Terraform configuration.
+We also took a look at how you can automate
+the installation process using Chocolatey.
+All right, that's all for now. Thanks for being with me.
+I hope you found this lesson useful
+and I look forward to seeing you in the next lesson.
