@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # HOTAACG - Hands-On with Terraform on Azure
 
 ## ABOUT THE COURSE
@@ -18,3 +19,6 @@ Wayne Hoggett
 
 Hello Cloud Gurus, my name is Wayne Hoggett and I’m an Azure Training Architect. I’m based in sunny Brisbane Australia. I have about 20 years’ experience in Microsoft infrastructure including Windows Server, System Center, Exchange, SQL Server and, Azure. I am very committed to lifelong learning. I am a Microsoft Certified Trainer and have earned over 20 certifications from Microsoft, Citrix and ITIL throughout my career.
 
+=======
+# HOTAACG
+>>>>>>> 7f5f4c95e094d77ec9ba2a6a415dfd5df7fc86e4
